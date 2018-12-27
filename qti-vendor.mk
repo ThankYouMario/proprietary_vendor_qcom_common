@@ -14,9 +14,14 @@
 
 # perf blobs
 PRODUCT_PACKAGES += \
-	libqti-perfd-client_system \
-	libqti_performance \
-	vendor.qti.hardware.iop@1.0 \
-	vendor.qti.hardware.iop@2.0 \
-	vendor.qti.hardware.perf@1.0
+    libqti-perfd-client_system \
+    libqti_performance \
+    QPerformance \
+    vendor.qti.hardware.iop@1.0 \
+    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.perf@1.0 \
+    UxPerformance
 
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
