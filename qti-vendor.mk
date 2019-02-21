@@ -25,3 +25,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
+
+# Telephony
+PRODUCT_PACKAGES += \
+    qti-telephony-common \
+    QtiTelephonyServicelibrary
+
+# Telephony permissions
+PRODUCT_COPY_FILES += \
+    vendor/qcom/common/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml \
+    vendor/qcom/common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml
