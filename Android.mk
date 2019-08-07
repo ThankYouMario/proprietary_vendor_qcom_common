@@ -132,6 +132,24 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libaptX_encoder
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_64 := proprietary/lib64/libaptX_encoder.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libaptXHD_encoder
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_64 := proprietary/lib64/libaptXHD_encoder.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libavenhancements
 LOCAL_MODULE_OWNER := qcom
 LOCAL_SRC_FILES_64 := proprietary/lib64/libavenhancements.so
