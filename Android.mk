@@ -130,3 +130,46 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libavenhancements
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_64 := proprietary/lib64/libavenhancements.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libavenhancements.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmmosal
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_64 := proprietary/lib64/libmmosal.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libmmosal.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmmparser_lite
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_64 := proprietary/lib64/libmmparser_lite.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libmmparser_lite.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqct_resampler
+LOCAL_MODULE_OWNER := qcom
+LOCAL_SRC_FILES_32 := proprietary/lib/libqct_resampler.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)

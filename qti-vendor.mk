@@ -34,7 +34,19 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/common/proprietary/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM)/bin/perfservice \
     vendor/qcom/common/proprietary/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/perfservice.rc \
-    vendor/qcom/common/proprietary/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM)/etc/perf/wlc_model.tflite
+    vendor/qcom/common/proprietary/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM)/etc/perf/wlc_model.tflite \
+    vendor/qcom/common/proprietary/lib64/extractors/libmmparser.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparser.so \
+    vendor/qcom/common/proprietary/lib/extractors/libmmparser.so:$(TARGET_COPY_OUT_SYSTEM)/lib/extractors/libmmparser.so
+
+# AV
+PRODUCT_PACKAGES += \
+    libavenhancements \
+    libmmosal \
+    libmmparser_lite \
+    libqct_resampler
+
+# Enable QCT resampler
+AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER := true
 
 # IOP and Workload Classifier props
 PRODUCT_PROPERTY_OVERRIDES += \
