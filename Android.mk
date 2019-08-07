@@ -45,12 +45,33 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqti_performance
 LOCAL_MODULE_OWNER := qti
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqti_performance.so
 LOCAL_SRC_FILES_32 := proprietary/lib/libqti_performance.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqti-util_system
+LOCAL_MODULE_OWNER := qti
+LOCAL_SRC_FILES_64 := proprietary/lib64/libqti-util_system.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libqti-util_system.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqti-iopd-client_system
+LOCAL_MODULE_OWNER := qti
+LOCAL_SRC_FILES_64 := proprietary/lib64/libqti-iopd-client_system.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libqti-iopd-client_system.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -89,4 +110,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
-

@@ -16,12 +16,19 @@
 PRODUCT_PACKAGES += \
     libqti-perfd-client_system \
     libqti_performance \
+    libqti-iopd-client_system \
+    libqti-util_system \
     QPerformance \
+    UxPerformance \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.perf@1.0 \
-    UxPerformance
+    perfservice
 
 PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/common/proprietary/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM)/bin/perfservice \
+    vendor/qcom/common/proprietary/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/perfservice.rc
