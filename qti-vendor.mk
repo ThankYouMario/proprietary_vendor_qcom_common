@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # AV
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
     libaptX_encoder \
     libaptXHD_encoder \
     libavenhancements \
