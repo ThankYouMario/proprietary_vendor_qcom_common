@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifeq ($(call is-vendor-board-platform,QCOM),true)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := QPerformance
 LOCAL_MODULE_OWNER := qti
@@ -191,3 +193,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
+
+include vendor/qcom/common/qti-vendor.mk
+
+endif
