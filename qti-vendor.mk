@@ -27,9 +27,9 @@ PRODUCT_PACKAGES += \
     perfservice \
     workloadclassifier
 
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+#PRODUCT_BOOT_JARS += \
+#    QPerformance \
+#    UxPerformance
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/common/proprietary/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM)/bin/perfservice \

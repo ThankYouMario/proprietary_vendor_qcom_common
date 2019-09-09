@@ -82,6 +82,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libqti_workloadclassifiermodel
 LOCAL_MODULE_OWNER := qti
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqti_workloadclassifiermodel.so
+LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
@@ -135,6 +136,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libaptX_encoder
 LOCAL_MODULE_OWNER := qcom
 LOCAL_SRC_FILES_64 := proprietary/lib64/libaptX_encoder.so
+LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
@@ -144,6 +146,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libaptXHD_encoder
 LOCAL_MODULE_OWNER := qcom
 LOCAL_SRC_FILES_64 := proprietary/lib64/libaptXHD_encoder.so
+LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
