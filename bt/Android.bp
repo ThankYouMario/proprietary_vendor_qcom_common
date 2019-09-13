@@ -13,25 +13,33 @@
 // limitations under the License.
 
 cc_prebuilt_library_shared {
-    name: "libaptX_encoder",
+    name: "libaptXHD_encoder",
     owner: "qcom",
-    multilib: {
-        lib64: {
-            srcs: ["proprietary/lib64/libaptX_encoder.so"],
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/product/lib64/libaptXHD_encoder.so"],
         },
     },
     compile_multilib: "64",
-
+    prefer: true,
+    product_specific: true,
 }
 
 cc_prebuilt_library_shared {
-    name: "libaptXHD_encoder",
+    name: "libaptX_encoder",
     owner: "qcom",
-    multilib: {
-        lib64: {
-            srcs: ["proprietary/lib64/libaptXHD_encoder.so"],
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/product/lib64/libaptX_encoder.so"],
         },
     },
     compile_multilib: "64",
-
+    prefer: true,
+    product_specific: true,
 }
