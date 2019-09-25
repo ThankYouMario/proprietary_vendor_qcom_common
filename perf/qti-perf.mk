@@ -23,9 +23,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.Performance.xml \
     UxPerformance \
     com.qualcomm.qti.UxPerformance.xml \
-    vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
-    vendor.qti.hardware.perf@1.0 \
     perfservice \
     workloadclassifier
 
