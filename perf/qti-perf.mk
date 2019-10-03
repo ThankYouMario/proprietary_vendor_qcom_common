@@ -17,7 +17,9 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client_system \
     libqti-iopd-client_system \
     libqti-util_system \
+    libqti_performance \
     libqti_workloadclassifiermodel \
+    QPerformance \
     com.qualcomm.qti.Performance.xml \
     UxPerformance \
     com.qualcomm.qti.UxPerformance.xml \
@@ -27,6 +29,7 @@ PRODUCT_PACKAGES += \
     workloadclassifier
 
 PRODUCT_BOOT_JARS += \
+    QPerformance \
     UxPerformance
 
 PRODUCT_COPY_FILES += \
