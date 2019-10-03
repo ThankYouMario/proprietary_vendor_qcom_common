@@ -127,46 +127,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.iop@1.0",
-    owner: "qti",
-    multilib: {
-        lib64: {
-            srcs: ["proprietary/lib64/vendor.qti.hardware.iop@1.0.so"],
-        },
-        lib32: {
-            srcs: ["proprietary/lib/vendor.qti.hardware.iop@1.0.so"],
-        },
-    },
-    compile_multilib: "both",
-
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.iop@2.0",
     owner: "qti",
     multilib: {
         lib64: {
-            srcs: ["proprietary/lib64/vendor.qti.hardware.iop@2.0.so"],
+            srcs: ["proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so"],
         },
         lib32: {
-            srcs: ["proprietary/lib/vendor.qti.hardware.iop@2.0.so"],
+            srcs: ["proprietary/product/lib/vendor.qti.hardware.iop@2.0.so"],
         },
     },
     compile_multilib: "both",
+    product_specific: true,
 
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@1.0",
+    name: "vendor.qti.hardware.perf@2.0",
     owner: "qti",
     multilib: {
         lib64: {
-            srcs: ["proprietary/lib64/vendor.qti.hardware.perf@1.0.so"],
+            srcs: ["proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so"],
         },
         lib32: {
-            srcs: ["proprietary/lib/vendor.qti.hardware.perf@1.0.so"],
+            srcs: ["proprietary/product/lib/vendor.qti.hardware.perf@2.0.so"],
         },
     },
     compile_multilib: "both",
+    product_specific: true,
 
 }

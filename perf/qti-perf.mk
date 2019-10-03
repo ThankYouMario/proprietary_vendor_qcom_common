@@ -17,17 +17,19 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client_system \
     libqti-iopd-client_system \
     libqti-util_system \
+    libqti_performance \
     libqti_workloadclassifiermodel \
+    QPerformance \
     com.qualcomm.qti.Performance.xml \
     UxPerformance \
     com.qualcomm.qti.UxPerformance.xml \
-    vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
-    vendor.qti.hardware.perf@1.0 \
+    vendor.qti.hardware.perf@2.0 \
     perfservice \
     workloadclassifier
 
 PRODUCT_BOOT_JARS += \
+    QPerformance \
     UxPerformance
 
 PRODUCT_COPY_FILES += \
