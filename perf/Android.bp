@@ -38,6 +38,21 @@ prebuilt_etc {
     sub_dir: "permissions",
 }
 
+cc_prebuilt_library_shared {
+    name: "libdolphin",
+    owner: "qti",
+    multilib: {
+        lib64: {
+            srcs: ["proprietary/lib64/libdolphin.so"],
+        },
+        lib32: {
+            srcs: ["proprietary/lib/libdolphin.so"],
+        },
+    },
+    compile_multilib: "both",
+
+}
+
 
 cc_prebuilt_library_shared {
     name: "libqti-at",
