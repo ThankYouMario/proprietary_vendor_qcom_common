@@ -18,7 +18,10 @@ PRODUCT_PACKAGES += \
     libavenhancements \
     libmmosal \
     libmmparser_lite \
-    libqct_resampler
+    libqct_resampler \
+    libstagefright_httplive \
+    vendor.qti.hardware.audiohalext-utils \
+    vendor.qti.hardware.audiohalext@1.0
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/common/av/proprietary/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparserextractor.so \

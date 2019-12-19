@@ -69,3 +69,58 @@ cc_prebuilt_library_shared {
     compile_multilib: "32",
 
 }
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.audiohalext-utils",
+	owner: "qcom",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.hardware.audiohalext-utils.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.hardware.audiohalext-utils.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.audiohalext@1.0",
+	owner: "qcom",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libstagefright_httplive",
+	owner: "qcom",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libstagefright_httplive.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libstagefright_httplive.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
