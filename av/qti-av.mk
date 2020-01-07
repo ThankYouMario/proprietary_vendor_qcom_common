@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Paranoid Android
+# Copyright (C) 2019-2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@ PRODUCT_PACKAGES += \
     libmmosal \
     libmmparser_lite \
     libqct_resampler \
-    libstagefright_httplive \
     vendor.qti.hardware.audiohalext-utils \
     vendor.qti.hardware.audiohalext@1.0
 
