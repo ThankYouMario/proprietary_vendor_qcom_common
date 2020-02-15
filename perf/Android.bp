@@ -128,6 +128,9 @@ cc_prebuilt_library_shared {
         lib64: {
             srcs: ["proprietary/lib64/libqti_workloadclassifiermodel.so"],
         },
+        lib32: {
+            srcs: ["proprietary/lib/libqti_workloadclassifiermodel.so"],
+        },
     },
     compile_multilib: "64",
 }
