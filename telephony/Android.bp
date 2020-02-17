@@ -1,0 +1,277 @@
+/**
+ * Copyright (C) 2019-2020 Paranoid Android
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+soong_namespace {
+}
+
+android_app_import {
+	name: "CallFeaturesSetting",
+	owner: "qcom",
+	apk: "proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DeviceInfo",
+	owner: "qcom",
+	apk: "proprietary/product/app/DeviceInfo/DeviceInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DynamicDDSService",
+	owner: "qcom",
+	apk: "proprietary/product/app/DynamicDDSService/DynamicDDSService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "QtiSystemService",
+	owner: "qcom",
+	apk: "proprietary/product/app/QtiSystemService/QtiSystemService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "QtiTelephonyService",
+	owner: "qcom",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SimSettings",
+	owner: "qcom",
+	apk: "proprietary/product/app/SimSettings/SimSettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "atfwd",
+	owner: "qcom",
+	apk: "proprietary/product/app/atfwd/atfwd.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "qcom",
+	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "embms",
+	owner: "qcom",
+	apk: "proprietary/product/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "qcom",
+	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "remotesimlockservice",
+	owner: "qcom",
+	apk: "proprietary/product/app/remotesimlockservice/remotesimlockservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uceShimService",
+	owner: "qcom",
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimgbaservice",
+	owner: "qcom",
+	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimlpaservice",
+	owner: "qcom",
+	apk: "proprietary/product/app/uimlpaservice/uimlpaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteclient",
+	owner: "qcom",
+	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteserver",
+	owner: "qcom",
+	apk: "proprietary/product/app/uimremoteserver/uimremoteserver.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "QAS_DVC_MSP",
+	owner: "qcom",
+	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "qcom",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "qcom",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "qcom",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+dex_import {
+	name: "qcnvitems",
+	owner: "qcom",
+	jars: ["proprietary/framework/qcnvitems.jar"],
+}
+
+dex_import {
+	name: "tcmclient",
+	owner: "qcom",
+	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/dpmapi.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/qcrilhook.jar"],
+	product_specific: true,
+}
+
