@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/common/av
+
 # AV
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
