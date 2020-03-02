@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 Paranoid Android
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # AV
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
     libavenhancements \
     libmmosal \
     libmmparser_lite \
