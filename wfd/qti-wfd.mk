@@ -15,6 +15,8 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/common/wfd
 
+DEVICE_FRAMEWORK_MANIFEST_FILE += vendor/qcom/common/wfd/framework_manifest.xml
+
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac \
