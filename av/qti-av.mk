@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     libmmosal \
     libmmparser_lite \
     libqct_resampler \
-    vendor.qti.hardware.audiohalext-utils \
     vendor.qti.hardware.audiohalext@1.0
 
 PRODUCT_COPY_FILES += \
