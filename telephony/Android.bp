@@ -195,18 +195,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QAS_DVC_MSP",
-	owner: "qcom",
-	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "dpmserviceapp",
 	owner: "qcom",
 	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
@@ -243,12 +231,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "qcnvitems",
-	owner: "qcom",
-	jars: ["proprietary/framework/qcnvitems.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "qcom",
 	jars: ["proprietary/framework/tcmclient.jar"],
@@ -274,4 +256,3 @@ dex_import {
 	jars: ["proprietary/product/framework/qcrilhook.jar"],
 	product_specific: true,
 }
-
