@@ -13,20 +13,8 @@
 # limitations under the License.
 
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/common/av
-
-# AV
-PRODUCT_PACKAGES += \
-    libavenhancements \
-    libmmosal \
-    libmmparser_lite \
-    libqct_resampler \
-    vendor.qti.hardware.audiohalext-utils \
-    vendor.qti.hardware.audiohalext@1.0
+    vendor/qcom/common/bt
 
 PRODUCT_COPY_FILES += \
-    vendor/qcom/common/av/proprietary/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparserextractor.so \
-    vendor/qcom/common/av/proprietary/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib/extractors/libmmparserextractor.so
-
-# Enable QCT resampler
-AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER := true
+    vendor/qcom/common/bt/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
+    vendor/qcom/common/bt/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so

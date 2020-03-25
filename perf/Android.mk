@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 Paranoid Android
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/common/bt
+LOCAL_PATH := $(call my-dir)
 
-# BT
-PRODUCT_PACKAGES += \
-    libaptX_encoder \
-    libaptXHD_encoder
+ifneq (,$(filter perf,$(TARGET_COMMON_QTI_COMPONENTS)))
+
+endif
