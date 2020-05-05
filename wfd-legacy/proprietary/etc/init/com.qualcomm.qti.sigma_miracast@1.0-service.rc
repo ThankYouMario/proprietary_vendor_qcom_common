@@ -1,0 +1,12 @@
+service sigmahal /system/bin/sigma_miracasthalservice
+  class main
+  user system
+  group audio
+  oneshot
+  disabled
+
+on property:sys.sigma=enable
+     start sigmahal
+
+on property:sys.sigma=disable
+     stop sigmahal
