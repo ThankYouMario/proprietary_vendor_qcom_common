@@ -39,8 +39,12 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/perf/proprietary/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_performance.so \
     vendor/qcom/common/perf/proprietary/lib64/libqti_workloadclassifiermodel.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_workloadclassifiermodel.so \
     vendor/qcom/common/perf/proprietary/lib64/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libskewknob_system.so \
+    vendor/qcom/common/perf/proprietary/product/lib/liblayerext.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/liblayerext.qti.so \
+    vendor/qcom/common/perf/proprietary/product/lib/libsmomo.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsmomo.qti.so \
     vendor/qcom/common/perf/proprietary/product/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/qcom/common/perf/proprietary/product/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.perf@2.0.so \
+    vendor/qcom/common/perf/proprietary/product/lib64/liblayerext.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblayerext.qti.so \
+    vendor/qcom/common/perf/proprietary/product/lib64/libsmomo.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsmomo.qti.so \
     vendor/qcom/common/perf/proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/qcom/common/perf/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so
 
