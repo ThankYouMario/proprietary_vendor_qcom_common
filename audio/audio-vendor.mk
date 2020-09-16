@@ -16,7 +16,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/common/audio
 
 PRODUCT_COPY_FILES += \
-    vendor/qcom/common/audio/proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.voiceprint-V1.0-java.jar \
     vendor/qcom/common/audio/proprietary/product/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/qcom/common/audio/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/qcom/common/audio/proprietary/system/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
@@ -31,4 +30,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libvraudio \
-    audiosphere
+    audiosphere \
+    vendor.qti.voiceprint-V1.0-java

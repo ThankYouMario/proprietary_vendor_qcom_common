@@ -244,14 +244,270 @@ android_app_import {
 }
 
 dex_import {
+	name: "ActivityExt",
+	owner: "qcom",
+	jars: ["proprietary/system/framework/ActivityExt.jar"],
+}
+
+dex_import {
+	name: "ConnectivityExt",
+	owner: "qcom",
+	jars: ["proprietary/system/framework/ConnectivityExt.jar"],
+}
+
+dex_import {
+	name: "oem-services",
+	owner: "qcom",
+	jars: ["proprietary/system/framework/oem-services.jar"],
+}
+
+dex_import {
 	name: "qcnvitems",
 	owner: "qcom",
-	jars: ["proprietary/framework/qcnvitems.jar"],
+	jars: ["proprietary/system/framework/qcnvitems.jar"],
 }
 
 dex_import {
 	name: "tcmclient",
 	owner: "qcom",
-	jars: ["proprietary/framework/tcmclient.jar"],
+	jars: ["proprietary/system/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.api-V1.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V2.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V2.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/dpmapi.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/embmslibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/qcrilhook.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimlpalibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremoteclientlibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/uimremoteclientlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremoteserverlibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/uimremoteserverlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremotesimlocklibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/uimremotesimlocklibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimservicelibrary",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/uimservicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.api-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.constants-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.qmi-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
+	product_specific: true,
 }
 

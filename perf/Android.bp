@@ -22,7 +22,7 @@ soong_namespace {
 android_app_import {
 	name: "workloadclassifier",
 	owner: "qcom",
-	apk: "proprietary/app/workloadclassifier/workloadclassifier.apk",
+	apk: "proprietary/system/app/workloadclassifier/workloadclassifier.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -32,12 +32,12 @@ android_app_import {
 dex_import {
 	name: "QPerformance",
 	owner: "qcom",
-	jars: ["proprietary/framework/QPerformance.jar"],
+	jars: ["proprietary/system/framework/QPerformance.jar"],
 }
 
 dex_import {
 	name: "UxPerformance",
 	owner: "qcom",
-	jars: ["proprietary/framework/UxPerformance.jar"],
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
 }
 

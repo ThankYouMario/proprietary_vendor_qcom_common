@@ -27,13 +27,14 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/vendor.qti.hardware.audiohalext-utils.so"],
+			srcs: ["proprietary/system/lib/vendor.qti.hardware.audiohalext-utils.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/lib64/vendor.qti.hardware.audiohalext-utils.so"],
+			srcs: ["proprietary/system/lib64/vendor.qti.hardware.audiohalext-utils.so"],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 }
 
@@ -45,10 +46,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libqct_resampler.so"],
+			srcs: ["proprietary/system/lib/libqct_resampler.so"],
 		},
 	},
 	compile_multilib: "32",
+	check_elf_files: false,
 	prefer: true,
 }
 
@@ -67,6 +69,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }

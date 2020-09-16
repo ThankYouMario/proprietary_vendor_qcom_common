@@ -34,6 +34,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 }
 
@@ -41,5 +42,12 @@ dex_import {
 	name: "audiosphere",
 	owner: "qcom",
 	jars: ["proprietary/system/framework/audiosphere.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.voiceprint-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+	product_specific: true,
 }
 
