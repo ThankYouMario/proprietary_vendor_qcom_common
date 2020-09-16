@@ -20,22 +20,23 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.audiohalext-utils",
+	name: "vendor.qti.hardware.audiohalext@1.0",
 	owner: "qcom",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system/lib/vendor.qti.hardware.audiohalext-utils.so"],
+			srcs: ["proprietary/system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/system/lib64/vendor.qti.hardware.audiohalext-utils.so"],
+			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so"],
 		},
 	},
 	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
+	system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -46,31 +47,12 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system/lib/libqct_resampler.so"],
+			srcs: ["proprietary/system_ext/lib/libqct_resampler.so"],
 		},
 	},
 	compile_multilib: "32",
 	check_elf_files: false,
 	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.audiohalext@1.0",
-	owner: "qcom",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 

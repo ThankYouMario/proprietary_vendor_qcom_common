@@ -22,11 +22,12 @@ soong_namespace {
 android_app_import {
 	name: "workloadclassifier",
 	owner: "qcom",
-	apk: "proprietary/system/app/workloadclassifier/workloadclassifier.apk",
+	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
 }
 
 dex_import {

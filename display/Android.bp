@@ -22,17 +22,18 @@ soong_namespace {
 android_app_import {
 	name: "colorservice",
 	owner: "qcom",
-	apk: "proprietary/product/app/colorservice/colorservice.apk",
+	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qti.snapdragon.sdk.display",
 	owner: "qcom",
-	jars: ["proprietary/system/framework/com.qti.snapdragon.sdk.display.jar"],
+	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
+	product_specific: true,
 }
 

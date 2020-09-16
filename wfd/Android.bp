@@ -22,12 +22,13 @@ soong_namespace {
 android_app_import {
 	name: "WfdService",
 	owner: "qcom",
-	apk: "proprietary/system/priv-app/WfdService/WfdService.apk",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
