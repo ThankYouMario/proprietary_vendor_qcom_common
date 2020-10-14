@@ -26,5 +26,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/av/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.audiohalext@1.0 \
     libqct_resampler
