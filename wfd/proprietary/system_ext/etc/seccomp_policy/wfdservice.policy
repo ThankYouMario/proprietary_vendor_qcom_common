@@ -55,6 +55,7 @@ execve: 1
 connect: 1
 socket: arg0 == AF_UNIX
 getpid: 1
+gettid: 1
 nanosleep: 1
 restart_syscall: 1
 set_tid_address: 1

@@ -764,6 +764,12 @@
     <DisableAVSync>0</DisableAVSync>
 
     <!--
+        Push video frames to display in async mode, so that display can drop frames
+        if frames are pushed faster than vsync.
+    -->
+    <PushVideoFrameInASyncMode>0</PushVideoFrameInASyncMode>
+
+    <!--
         To drop video frame in case parser detects and reports packet loss over the air
         Three modes are supported -
         1. 0 - Don't drop any video frame
