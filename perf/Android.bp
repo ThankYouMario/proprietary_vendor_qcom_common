@@ -20,10 +20,21 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "PerformanceMode",
+	owner: "qcom",
+	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "workloadclassifier",
 	owner: "qcom",
 	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
-	certificate: "platform",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
