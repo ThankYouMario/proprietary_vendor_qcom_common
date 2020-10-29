@@ -234,7 +234,6 @@ PRODUCT_PACKAGES += \
     uimremoteclient \
     uimremoteserver \
     xdivert \
-    MSDC_UI \
     QAS_DVC_MSP \
     dpmserviceapp \
     ims \
