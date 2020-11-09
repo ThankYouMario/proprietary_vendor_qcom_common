@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2019, Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on property:vendor.wigig.driver.probed=1
+   # wigig network tuning
+   write /sys/class/net/wigig0/queues/rx-0/rps_cpus c0
+   write /sys/class/net/bond0/queues/rx-0/rps_cpus c0
+   write /sys/class/net/wigig0/gro_flush_timeout 2000
