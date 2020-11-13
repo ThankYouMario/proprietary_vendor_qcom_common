@@ -512,6 +512,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.mwqem-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.slm-V1.0-java",
 	owner: "qcom",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],

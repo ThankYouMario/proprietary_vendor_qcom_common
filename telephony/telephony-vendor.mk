@@ -73,11 +73,13 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_cci_system.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_encdec_system.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib/libslmiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libslmiptablemgr.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/libtrigger-handler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtrigger-handler.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libupdateprof.qti.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.mwqem@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -98,6 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.6.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
@@ -158,11 +161,13 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/libmsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmsp.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_cci_system.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_encdec_system.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/libslmiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libslmiptablemgr.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/libtrigger-handler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtrigger-handler.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libupdateprof.qti.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -175,6 +180,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.0.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.embmssl@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.embmssl@1.1.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
@@ -185,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
@@ -267,6 +275,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.data.factory-V2.1-java \
+    vendor.qti.data.mwqem-V1.0-java \
     vendor.qti.data.slm-V1.0-java \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
