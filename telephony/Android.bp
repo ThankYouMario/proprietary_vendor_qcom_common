@@ -512,6 +512,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.factory-V2.2-java",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.mwqem-V1.0-java",
 	owner: "qcom",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
@@ -585,6 +592,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.qmi-V1.0-java",
 	owner: "qcom",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.mwqemadapter-V1.0-java",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
