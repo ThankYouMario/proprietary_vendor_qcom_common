@@ -23,7 +23,7 @@ android_app_import {
 	name: "com.qualcomm.location",
 	owner: "qcom",
 	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -35,7 +35,7 @@ android_app_import {
 	name: "xtra_t_app",
 	owner: "qcom",
 	apk: "proprietary/system_ext/priv-app/xtra_t_app/xtra_t_app.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},

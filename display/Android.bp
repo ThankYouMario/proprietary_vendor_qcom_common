@@ -23,7 +23,7 @@ android_app_import {
 	name: "colorservice",
 	owner: "qcom",
 	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},

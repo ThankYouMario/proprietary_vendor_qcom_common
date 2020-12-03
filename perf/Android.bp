@@ -23,7 +23,7 @@ android_app_import {
 	name: "PerformanceMode",
 	owner: "qcom",
 	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -34,7 +34,7 @@ android_app_import {
 	name: "workloadclassifier",
 	owner: "qcom",
 	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
