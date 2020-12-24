@@ -71,5 +71,6 @@ PRODUCT_PACKAGES += \
     PerformanceMode \
     workloadclassifier \
     QPerformance \
+    QXPerformance \
     UxPerformance \
     vendor.qti.hardware.servicetracker@1.2-service.xml
