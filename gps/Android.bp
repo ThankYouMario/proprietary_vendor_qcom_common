@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 Paranoid Android
+ * Copyright (C) 2019-2021 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,6 +54,13 @@ dex_import {
 	name: "izat.xt.srv",
 	owner: "qcom",
 	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qmapbridge",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/qmapbridge.jar"],
 	system_ext_specific: true,
 }
 

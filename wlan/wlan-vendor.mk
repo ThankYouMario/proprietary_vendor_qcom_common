@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +16,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/common/wlan
 
 PRODUCT_COPY_FILES += \
+    vendor/qcom/common/wlan/proprietary/system_ext/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
+    vendor/qcom/common/wlan/proprietary/system_ext/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
+    vendor/qcom/common/wlan/proprietary/system_ext/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
+    vendor/qcom/common/wlan/proprietary/system_ext/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/qcom/common/wlan/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
     vendor/qcom/common/wlan/proprietary/vendor/bin/cfrtool:$(TARGET_COPY_OUT_VENDOR)/bin/cfrtool \
     vendor/qcom/common/wlan/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
@@ -61,3 +65,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wigig.netperftuner-V1.0-java \
+    vendor.qti.hardware.wigig.supptunnel-V1.0-java \
+    wigig-service
