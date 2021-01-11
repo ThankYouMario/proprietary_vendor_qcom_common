@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmiracastsystem.so \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
-    vendor/qcom/common/wfd/proprietary/system_ext/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdaac.so \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
     vendor/qcom/common/wfd/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
