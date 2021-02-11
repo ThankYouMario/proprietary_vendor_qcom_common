@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/wlan/proprietary/vendor/bin/host_manager_11ad:$(TARGET_COPY_OUT_VENDOR)/bin/host_manager_11ad \
     vendor/qcom/common/wlan/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
     vendor/qcom/common/wlan/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
-    vendor/qcom/common/wlan/proprietary/vendor/bin/sensingdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/sensingdaemon \
     vendor/qcom/common/wlan/proprietary/vendor/bin/shell_11ad:$(TARGET_COPY_OUT_VENDOR)/bin/shell_11ad \
     vendor/qcom/common/wlan/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
     vendor/qcom/common/wlan/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
@@ -29,10 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/wlan/proprietary/vendor/bin/wigighalsvc:$(TARGET_COPY_OUT_VENDOR)/bin/wigighalsvc \
     vendor/qcom/common/wlan/proprietary/vendor/bin/wigignpt:$(TARGET_COPY_OUT_VENDOR)/bin/wigignpt \
     vendor/qcom/common/wlan/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
-    vendor/qcom/common/wlan/proprietary/vendor/etc/init/hw/init.target.wigig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.wigig.rc \
     vendor/qcom/common/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
     vendor/qcom/common/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc \
-    vendor/qcom/common/wlan/proprietary/vendor/etc/sensors/config/wigig_sensing_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/wigig_sensing_0.json \
     vendor/qcom/common/wlan/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/qcom/common/wlan/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/qcom/common/wlan/proprietary/vendor/etc/wifi/wigig_p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wigig_p2p_supplicant.conf \
@@ -44,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/libwigig_ftm_flows.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_ftm_flows.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/libwigig_pciaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_pciaccess.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/libwigig_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_utils.so \
-    vendor/qcom/common/wlan/proprietary/vendor/lib64/libwigigsensing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigigsensing.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/qcom/common/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
