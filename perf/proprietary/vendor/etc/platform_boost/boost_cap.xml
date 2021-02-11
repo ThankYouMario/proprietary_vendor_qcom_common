@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2019 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<BoostCap>
+
+    <Cap target="cpu" capability="performance" value="level1"
+         opcode_value="2, 0x40800200, 0x4A0"/>
+
+    <Cap target="cpu" capability="performance" value="level2"
+         opcode_value="2, 0x40800200, 0x558"/>
+
+    <Cap target="cpu" capability="performance" value="level3"
+         opcode_value="2, 0x40800200, 0x610"/>
+
+    <Cap target="cpu" capability="performance" value="level4"
+         opcode_value="2, 0x40800200, 0x6C9"/>
+
+    <Cap target="cpu" capability="performance" value="level5"
+         opcode_value="2, 0x40800200, 0x781"/>
+
+    <Cap target="cpu" capability="performance" value="level6"
+         opcode_value="2, 0x40800200, 0x839"/>
+
+    <Cap target="cpu" capability="performance" value="level7"
+         opcode_value="2, 0x40800200, 0x8F1"/>
+
+    <Cap target="cpu" capability="performance" value="level8"
+         opcode_value="2, 0x40800200, 0x9A9"/>
+
+    <Cap target="cpu" capability="performance" value="level9"
+         opcode_value="2, 0x40800200, 0xA61"/>
+
+    <Cap target="cpu" capability="performance" value="level10"
+         opcode_value="2, 0x40800200, 0xB1A"/>
+
+</BoostCap>

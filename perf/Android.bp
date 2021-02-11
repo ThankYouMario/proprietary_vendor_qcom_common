@@ -6,6 +6,17 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "pasrservice",
+	owner: "qcom",
+	apk: "proprietary/vendor/app/pasrservice/pasrservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "PerformanceMode",
 	owner: "qcom",
 	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
@@ -49,6 +60,15 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.servicetracker@1.2-service",
 	owner: "qcom",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.memory.pasrmanager@1.0-service",
+	owner: "qcom",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

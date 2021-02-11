@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2019 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<BoostMode>
+
+    <Mode name="scenario.generic.launch">
+        <hint_id>0x000010F0</hint_id>
+        <hint_type>1</hint_type>
+    </Mode>
+
+    <Mode name="scenario.generic.loading">
+        <hint_id>0x000010F0</hint_id>
+        <hint_type>2</hint_type>
+    </Mode>
+
+    <Mode name="scenario.generic.playing">
+        <hint_id>0x000010F0</hint_id>
+        <hint_type>3</hint_type>
+    </Mode>
+
+</BoostMode>
