@@ -1,0 +1,17 @@
+#==============================================================================
+#       init.qti.display.rc
+#
+#  Copyright (c) 2020 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#===============================================================================
+service vendor_sys_qti_display /product/bin/init.qti.display.sh
+    class main
+    user system
+    group system
+    disabled
+    oneshot
+    seclabel u:r:vendor_sys_qti_display:s0
+
+on post-fs-data
+    start vendor_sys_qti_display

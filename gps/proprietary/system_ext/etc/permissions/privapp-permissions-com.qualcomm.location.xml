@@ -30,5 +30,10 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
     </privapp-permissions>
+    <privapp-permissions package="com.qualcomm.location.XT.setup">
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+        <permission name="android.permission.BIND_DEVICE_ADMIN"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    </privapp-permissions>
 </permissions>
 

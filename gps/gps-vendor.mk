@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.location \
     xtra_t_app \
+    xtra_t_app_setup \
     com.qti.location.sdk \
     izat.xt.srv \
     qmapbridge
