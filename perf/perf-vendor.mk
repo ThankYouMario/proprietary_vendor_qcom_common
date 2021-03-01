@@ -65,8 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/perf/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/qcom/common/perf/proprietary/vendor/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc \
     vendor/qcom/common/perf/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
-    vendor/qcom/common/perf/proprietary/vendor/etc/platform_boost/boost_cap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/platform_boost/boost_cap.xml \
-    vendor/qcom/common/perf/proprietary/vendor/etc/platform_boost/boost_mode.xml:$(TARGET_COPY_OUT_VENDOR)/etc/platform_boost/boost_mode.xml \
     vendor/qcom/common/perf/proprietary/vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so \
     vendor/qcom/common/perf/proprietary/vendor/lib/hw/vendor.qti.memory.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.memory.pasrmanager@1.0-impl.so \
     vendor/qcom/common/perf/proprietary/vendor/lib/libmemutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemutils.so \
