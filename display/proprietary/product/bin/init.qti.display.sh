@@ -18,8 +18,9 @@ case "$target" in
     "lahaina")
         #Set property to differentiate Lahaina & Cedros
         #SOC ID for Lahaina is 415, Lahaina P is 439, Lahaina-ATP is 456
+        #soc ID for SM8325 is 501, for SM8325P 502
         case "$soc_hwid" in
-           415|439|456)
+           415|439|456|501|502)
                setprop vendor.display.disable_rounded_corner 1
         esac
         ;;
