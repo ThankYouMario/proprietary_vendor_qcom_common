@@ -100,6 +100,9 @@
             "enc_bitrate_boost_qp_max": 40,
             // additional buffers to be added while computing pipeline delays
             "pipeline_extra_output_buffers": 2,
+            // time threshold of output buffer allocation loop since last input buffer queued(ms)
+            // 0 --> no such limitation (loop until allocation done)
+            "max_retry_alloc_output_timeout": 1000,
 
             // WARNING:
             //    Please DON'T change these values, if you don't know what you are doing.
