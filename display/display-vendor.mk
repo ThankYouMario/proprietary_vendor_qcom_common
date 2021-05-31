@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/common/display
 
 PRODUCT_COPY_FILES += \
-    vendor/qcom/common/display/proprietary/product/bin/init.qti.display.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/init.qti.display.sh \
-    vendor/qcom/common/display/proprietary/product/etc/init/init.qti.display.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.qti.display.rc \
     vendor/qcom/common/display/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/qcom/common/display/proprietary/system_ext/lib64/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsd_sdk_display.qti.so \
     vendor/qcom/common/display/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
