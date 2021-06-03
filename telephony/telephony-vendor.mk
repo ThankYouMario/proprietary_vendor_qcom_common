@@ -141,7 +141,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
+    vendor/qcom/common/telephony/proprietary/system_ext/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.1.so
 
 PRODUCT_PACKAGES += \
     CallFeaturesSetting \
@@ -225,4 +226,5 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig-V1.1-java \
     vendor.qti.ims.rcsconfig-V2.0-java \
     vendor.qti.ims.rcsconfig-V2.1-java \
-    vendor.qti.latency-V2.0-java
+    vendor.qti.latency-V2.0-java \
+    vendor.qti.latency-V2.1-java

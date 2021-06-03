@@ -18,7 +18,7 @@
    <Libname>libvideooptfeature.so</Libname>
    <Configs>
         <MAX_CONTENT_FPS>30</MAX_CONTENT_FPS>
-        <MAX_PANEL_FPS>60</MAX_PANEL_FPS>
+        <MAX_PANEL_FPS>120</MAX_PANEL_FPS>
     </Configs>
     <Profiles>
         <Profile>

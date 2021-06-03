@@ -690,3 +690,10 @@ dex_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "vendor.qti.latency-V2.1-java",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+

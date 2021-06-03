@@ -147,6 +147,12 @@
                 "c2.qti.hevc.encoder.cq",
                 "c2.qti.heic.encoder"
             ]
+        },
+        "filters-available": {
+            "filters": [
+                "c2.qti.vpp.filter",
+                "c2.qti.vpp.filter.secure"
+            ]
         }
     }
 }
