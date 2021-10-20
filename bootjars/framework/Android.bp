@@ -1,0 +1,23 @@
+dex_import {
+	name: "QPerformance",
+	owner: "qcom",
+	jars: ["QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "qcom",
+	jars: ["QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "qcom",
+	jars: ["UxPerformance.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "qcom",
+	jars: ["WfdCommon.jar"],
+}

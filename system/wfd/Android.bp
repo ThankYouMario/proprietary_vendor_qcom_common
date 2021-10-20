@@ -16,10 +16,3 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 }
-
-dex_import {
-	name: "WfdCommon",
-	owner: "qcom/common",
-	jars: ["proprietary/system/framework/WfdCommon.jar"],
-}
-
