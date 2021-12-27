@@ -9,12 +9,10 @@
 <permissions>
     <privapp-permissions package="com.qualcomm.location">
         <permission name="android.permission.CONTROL_LOCATION_UPDATES" />
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
-        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
@@ -34,6 +32,10 @@
         <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
         <permission name="android.permission.BIND_DEVICE_ADMIN"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.skyhook.blp">
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
     </privapp-permissions>
 </permissions>
 

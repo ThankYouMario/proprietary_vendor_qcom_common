@@ -5,20 +5,3 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libqct_resampler",
-	owner: "qcom/common",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libqct_resampler.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
-}
-

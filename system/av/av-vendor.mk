@@ -14,6 +14,3 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/av/proprietary/system_ext/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavenhancements.so \
     vendor/qcom/common/system/av/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
     vendor/qcom/common/system/av/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so
-
-PRODUCT_PACKAGES += \
-    libqct_resampler

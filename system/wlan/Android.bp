@@ -19,10 +19,3 @@ dex_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "wigig-service",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/wigig-service.jar"],
-	system_ext_specific: true,
-}
-

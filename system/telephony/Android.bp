@@ -19,40 +19,117 @@ android_app_import {
 android_app_import {
 	name: "ConfURIDialer",
 	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/ConfURIDialer/ConfURIDialer.apk",
+	apk: "proprietary/product/app/ConfURIDialer/ConfURIDialer.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "ConferenceDialer",
 	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/ConferenceDialer/ConferenceDialer.apk",
+	apk: "proprietary/product/app/ConferenceDialer/ConferenceDialer.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DeviceStatisticsService",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/DeviceStatisticsService/DeviceStatisticsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "remoteSimLockAuthentication",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "remotesimlockservice",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/remotesimlockservice/remotesimlockservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimgbaservice",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimlpaservice",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/uimlpaservice/uimlpaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteclient",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteserver",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/uimremoteserver/uimremoteserver.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "xdivert",
+	owner: "qcom/common",
+	apk: "proprietary/product/app/xdivert/xdivert.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 android_app_import {
 	name: "DeviceInfo",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DeviceStatisticsService",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -72,9 +149,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "NetworkSetting",
+	name: "ImsRcsService",
 	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/NetworkSetting/NetworkSetting.apk",
+	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -86,6 +163,17 @@ android_app_import {
 	name: "QTIDiagServices",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/QTIDiagServices/QTIDiagServices.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QtiTelephony",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -108,17 +196,6 @@ android_app_import {
 	name: "SimContact",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/SimContact/SimContact.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SimSettings",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/SimSettings/SimSettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -171,86 +248,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "remoteSimLockAuthentication",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "remotesimlockservice",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/remotesimlockservice/remotesimlockservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "uceShimService",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimgbaservice",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimlpaservice",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/uimlpaservice/uimlpaservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimremoteclient",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/uimremoteclient/uimremoteclient.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimremoteserver",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/uimremoteserver/uimremoteserver.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "xdivert",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/xdivert/xdivert.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -310,6 +310,62 @@ dex_import {
 	name: "tcmclient",
 	owner: "qcom/common",
 	jars: ["proprietary/system/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "remotesimlockmanagerlibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/remotesimlockmanagerlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimgbalibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimgbalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimgbamanagerlibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimlpalibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremoteclientlibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimremoteclientlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremoteserverlibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimremoteserverlibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimremotesimlocklibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimremotesimlocklibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimservicelibrary",
+	owner: "qcom/common",
+	jars: ["proprietary/product/framework/uimservicelibrary.jar"],
+	product_specific: true,
 }
 
 dex_import {
@@ -439,62 +495,6 @@ dex_import {
 }
 
 dex_import {
-	name: "remotesimlockmanagerlibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/remotesimlockmanagerlibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimgbalibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimgbalibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimgbamanagerlibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimgbamanagerlibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimlpalibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimlpalibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimremoteclientlibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimremoteclientlibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimremoteserverlibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimremoteserverlibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimremotesimlocklibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimremotesimlocklibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "uimservicelibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/uimservicelibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.data.factory-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar"],
@@ -526,6 +526,20 @@ dex_import {
 	name: "vendor.qti.data.factory-V2.3-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.4-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.4-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.5-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.5-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -565,6 +579,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
@@ -586,9 +607,30 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.flow-V1.0-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -610,6 +652,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.qmi-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.dpmservice-V1.0-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -642,6 +691,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.configservice-V1.0-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.factory-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
@@ -652,6 +708,13 @@ dex_import {
 	name: "vendor.qti.ims.factory-V1.1-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.0-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
 	system_ext_specific: true,
 }
 

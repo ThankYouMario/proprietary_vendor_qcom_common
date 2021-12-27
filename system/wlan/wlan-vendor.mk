@@ -13,5 +13,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.wigig.netperftuner-V1.0-java \
-    vendor.qti.hardware.wigig.supptunnel-V1.0-java \
-    wigig-service
+    vendor.qti.hardware.wigig.supptunnel-V1.0-java
