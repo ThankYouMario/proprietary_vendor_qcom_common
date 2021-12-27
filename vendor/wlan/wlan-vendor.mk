@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
-    vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/cfrtool:$(TARGET_COPY_OUT_VENDOR)/bin/cfrtool \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/ftm_flows_test:$(TARGET_COPY_OUT_VENDOR)/bin/ftm_flows_test \
@@ -19,12 +18,16 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/shell_11ad:$(TARGET_COPY_OUT_VENDOR)/bin/shell_11ad \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wificfrtool:$(TARGET_COPY_OUT_VENDOR)/bin/wificfrtool \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wifimyftm:$(TARGET_COPY_OUT_VENDOR)/bin/wifimyftm \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wigig_wiburn:$(TARGET_COPY_OUT_VENDOR)/bin/wigig_wiburn \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wigighalsvc:$(TARGET_COPY_OUT_VENDOR)/bin/wigighalsvc \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/bin/wigignpt:$(TARGET_COPY_OUT_VENDOR)/bin/wigignpt \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wificfr@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wificfr@1.0-service.rc \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifimyftm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifimyftm@1.0-service.rc \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
@@ -37,6 +40,12 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/libwigig_ftm_flows.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_ftm_flows.so \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/libwigig_pciaccess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_pciaccess.so \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/libwigig_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwigig_utils.so \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
+    vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifimyftm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifimyftm@1.0.so \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/qcom/common/vendor/wlan/proprietary/vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wifi.wificfr@1.0-service \
+    vendor.qti.hardware.wifi.wifimyftm@1.0-service
