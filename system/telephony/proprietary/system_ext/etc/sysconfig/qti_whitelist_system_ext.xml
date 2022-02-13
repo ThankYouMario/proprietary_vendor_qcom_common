@@ -32,5 +32,5 @@
 
 <config>
 <!-- Broadcast actions that are currently whitelisted. -->
-<allow-implicit-broadcast action="org.codeaurora.intent.action.CALL_COMPOSER_INFO" />
+<allow-implicit-broadcast action="org.codeaurora.intent.action.PRE_ALERTING_CALL_INFO" />
 </config>
