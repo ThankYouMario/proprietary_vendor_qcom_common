@@ -26,3 +26,22 @@ android_app_import {
 	},
 	system_ext_specific: true,
 }
+
+dex_import {
+	name: "QPerformance",
+	owner: "qcom/common",
+	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "qcom/common",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "qcom/common",
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
+}
+
