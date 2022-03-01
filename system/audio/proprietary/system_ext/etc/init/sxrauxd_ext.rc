@@ -1,0 +1,17 @@
+# File: sxrauxd_ext.rc
+#
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on post-fs-data
+    mkdir /data/misc/sxraux 0770 system system
+
+service sxrauxd /system_ext/bin/qxrsplitauxservice
+    disabled
+    class late_start
+    user system
+    group system
+
+on boot && property:ro.boot.product.vendor.sku=taro
+    start sxrauxd
