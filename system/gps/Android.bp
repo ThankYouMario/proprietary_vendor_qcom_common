@@ -17,6 +17,30 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "xtra_t_app",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/priv-app/xtra_t_app/xtra_t_app.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "xtra_t_app_setup",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/priv-app/xtra_t_app_setup/xtra_t_app_setup.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "com.qti.location.sdk",
 	owner: "qcom/common",
@@ -28,13 +52,6 @@ dex_import {
 	name: "izat.xt.srv",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qmapbridge",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/qmapbridge.jar"],
 	system_ext_specific: true,
 }
 
