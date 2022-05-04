@@ -61,7 +61,6 @@ listen: 1
 restart_syscall: 1
 clone: 1
 sched_getscheduler: 1
-execve: 1
 write: 1
 socket: arg0 == AF_UNIX
 set_tid_address: 1

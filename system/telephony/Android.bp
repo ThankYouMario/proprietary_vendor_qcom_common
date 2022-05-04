@@ -694,6 +694,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.configservice-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.connection-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
@@ -718,6 +725,13 @@ dex_import {
 	name: "vendor.qti.ims.factory-V2.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -757,9 +771,23 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssip-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 

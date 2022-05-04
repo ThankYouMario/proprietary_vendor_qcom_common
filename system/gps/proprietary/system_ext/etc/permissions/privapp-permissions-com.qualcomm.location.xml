@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!---/***********************************************************
-  Copyright (c) 2017, 2020 Qualcomm Technologies, Inc.
+  Copyright (c) 2017, 2020, 2022 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 **************************************************************-->
@@ -20,6 +20,8 @@
         <permission name="android.permission.WRITE_SETTINGS"/>
         <permission name="android.permission.READ_OEM_UNLOCK_STATE"/>
         <permission name="android.permission.BIND_DEVICE_ADMIN"/>
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
     </privapp-permissions>
     <privapp-permissions package="com.qualcomm.location.XT">
         <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
