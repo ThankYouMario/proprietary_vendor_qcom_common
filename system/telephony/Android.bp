@@ -39,17 +39,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DeviceStatisticsService",
-	owner: "qcom/common",
-	apk: "proprietary/product/app/DeviceStatisticsService/DeviceStatisticsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "remoteSimLockAuthentication",
 	owner: "qcom/common",
 	apk: "proprietary/product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
@@ -130,6 +119,17 @@ android_app_import {
 	name: "DeviceInfo",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "DeviceStatisticsService",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -533,6 +533,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.factory-V2.6-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.6-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.7-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.7-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.mwqem-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
@@ -575,6 +589,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.2-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.3-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
@@ -606,6 +634,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.flow-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.flow-V1.1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -736,6 +771,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.factory-V2.2-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
@@ -778,6 +820,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssip-V1.2-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
@@ -792,6 +841,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.2-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.latency-V2.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
@@ -802,6 +858,13 @@ dex_import {
 	name: "vendor.qti.latency-V2.1-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.2-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.2-java.jar"],
 	system_ext_specific: true,
 }
 

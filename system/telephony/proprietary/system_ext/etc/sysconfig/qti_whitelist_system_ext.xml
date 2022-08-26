@@ -31,6 +31,10 @@
 -->
 
 <config>
-<!-- Broadcast actions that are currently whitelisted. -->
-<allow-implicit-broadcast action="org.codeaurora.intent.action.PRE_ALERTING_CALL_INFO" />
+    <!-- Broadcast actions that are currently whitelisted. -->
+    <allow-implicit-broadcast action="org.codeaurora.intent.action.PRE_ALERTING_CALL_INFO" />
+    <!-- These are location components that need to freely run in the background -->
+    <allow-in-power-save package="com.qualcomm.location" />
+    <hidden-api-whitelisted-app package="com.qualcomm.location" />
+    <hidden-api-whitelisted-app package="com.skyhook.blp" />
 </config>
