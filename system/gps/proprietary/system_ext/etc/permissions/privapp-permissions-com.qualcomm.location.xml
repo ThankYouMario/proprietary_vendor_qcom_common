@@ -22,6 +22,8 @@
         <permission name="android.permission.BLUETOOTH_CONNECT"/>
         <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS"/>
         <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
     </privapp-permissions>
     <privapp-permissions package="com.qualcomm.location.XT">
         <permission name="android.permission.CONTROL_LOCATION_UPDATES" />

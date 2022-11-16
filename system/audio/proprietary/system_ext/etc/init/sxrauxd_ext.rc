@@ -15,3 +15,9 @@ service sxrauxd /system_ext/bin/qxrsplitauxservice
 
 on boot && property:ro.boot.product.vendor.sku=taro
     start sxrauxd
+
+on boot && property:ro.boot.product.vendor.sku=kalama
+    start sxrauxd
+
+on boot && property:ro.boot.product.vendor.sku=kona
+    start sxrauxd

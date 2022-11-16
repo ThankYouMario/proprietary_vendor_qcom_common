@@ -66,3 +66,7 @@ socket: arg0 == AF_UNIX
 set_tid_address: 1
 rt_sigreturn: 1
 connect: 1
+clock_gettime: 1
+gettid: 1
+rt_tgsigqueueinfo: 1
+nanosleep: 1
