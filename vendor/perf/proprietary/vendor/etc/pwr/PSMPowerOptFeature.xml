@@ -1,0 +1,68 @@
+<!--
+/******************************************************************************
+  @file    PSMOptimizationFeature.xml
+  @brief   PSM Optimization feature xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2020-2022 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<Feature>
+    <Name>PSMPowerOptFeature</Name>
+    <Libname>libpsmoptfeature.so</Libname>
+    <Configs>
+        <PSM>0</PSM>
+        <CPUNODE>/sys/devices/system/cpu/cpu7/online</CPUNODE>
+        <CPUPOLICY>/sys/devices/system/cpu/cpufreq/policy7</CPUPOLICY>
+        <Display>vendor.display.use_smooth_motion, 0</Display>
+        <Camera>camera.disable_zsl_mode, 1</Camera>
+    </Configs>
+    <Profiles>
+        <Profile>
+        <!-- config_enableDefault -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_LITTLE -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_BIG -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_PRIME -->
+            <!-- Disable Colocation -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
+            <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_TARGET_LOAD_SHIFT_CLUSTER_LITTLE -->
+            <DEFAULT>0x40C68100, 0xFFFFFFF6, 0x40C68000, 0xFFFFFFF6, 0x40C68200, 0xFFFFFFF6, 0x40CF4000, 0x270F2706,
+            0x4143C100, 998, 0x4143C000, 1100, 0x41450100, 0, 0x41454100, 0x4</DEFAULT>
+        <!-- config_enableProfile for Browser -->
+            <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, val -->
+            <PROFILE_BROWSER>0x40804000, 0x7D0</PROFILE_BROWSER>
+        <!-- config_enableProfile1 -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_BIG -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_PRIME -->
+            <!-- Disable Colocation -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
+            <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_TARGET_LOAD_SHIFT_CLUSTER_LITTLE -->
+            <PROFILE1>0x40C68000, 0xFFFFFFEC, 0x40C68200, 0xFFFFFFEC, 0x40CF4000, 0x270F2706,
+            0x4143C100, 998, 0x4143C000, 1100, 0x41450100, 0, 0x41454100, 0x4</PROFILE1>
+        <!-- config_enableProfile2 -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_BIG -->
+            <!-- MPCTLV3_SCHED_LOAD_BOOST_PRIME -->
+            <!-- Disable Colocation -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
+            <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_LITTLE -->
+            <!-- MPCTLV3_TARGET_LOAD_SHIFT_CLUSTER_LITTLE -->
+            <PROFILE2>0x40C68000, 0xFFFFFFFA, 0x40C68200, 0xFFFFFFFA, 0x40CF4000, 0x270F2706,
+            0x4143C100, 998, 0x4143C000, 1100, 0x41450100, 0, 0x41454100, 0x4</PROFILE2>
+        </Profile>
+    </Profiles>
+    <IgnoredApps>
+        <App1></App1>
+        <App2></App2>
+    </IgnoredApps>
+</Feature>

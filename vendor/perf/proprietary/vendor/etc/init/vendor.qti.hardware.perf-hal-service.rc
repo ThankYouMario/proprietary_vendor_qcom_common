@@ -1,0 +1,29 @@
+#  @file    vendor.qti.hardware.perf-hal-service.rc
+#  @brief   Defination perf service
+#
+#  DESCRIPTION
+#  ---------------------------------------------------------------------------
+#       Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
+#       All Rights Reserved.
+#       Confidential and Proprietary - Qualcomm Technologies, Inc.
+#  ---------------------------------------------------------------------------
+service perf-hal-2-3 /vendor/bin/hw/vendor.qti.hardware.perf-hal-service
+    class hal
+    user root
+    group root system readproc oem_2907
+
+on property:vendor.change.cgroup=fg && property:vendor.change.cgroup.for.pid=*
+    write /dev/cpuset/foreground/tasks ${vendor.change.cgroup.for.pid}
+    write /dev/cpuctl/foreground/tasks ${vendor.change.cgroup.for.pid}
+    write /proc/${vendor.change.cgroup.for.pid}/timerslack_ns 50000
+
+on property:vendor.change.cgroup=bg && property:vendor.change.cgroup.for.pid=*
+    write /dev/blkio/background/tasks ${vendor.change.cgroup.for.pid}
+    write /dev/cpuctl/background/tasks ${vendor.change.cgroup.for.pid}
+    write /proc/${vendor.change.cgroup.for.pid}/timerslack_ns 40000000
+
+on property:vendor.change.cgroup=def && property:vendor.change.cgroup.for.pid=*
+    write /dev/blkio/tasks ${vendor.change.cgroup.for.pid}
+    write /dev/cpuctl/tasks ${vendor.change.cgroup.for.pid}
+    write /dev/cpuset/tasks ${vendor.change.cgroup.for.pid}
+    write /proc/${vendor.change.cgroup.for.pid}/timerslack_ns 50000

@@ -1,0 +1,24 @@
+<!--
+/******************************************************************************
+  @file    StandbyFeature.xml
+  @brief   Standby feature xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2021 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<Feature>
+    <Name>StandbyFeature</Name>
+    <Libname>libstandbyfeature.so</Libname>
+    <Configs>
+        <DefaultLevel>3</DefaultLevel>
+        <PowersaveLevel>5</PowersaveLevel>
+        <UFS_node>/sys/devices/platform/soc/1d84000.ufshc/spm_lvl</UFS_node>
+    </Configs>
+</Feature>

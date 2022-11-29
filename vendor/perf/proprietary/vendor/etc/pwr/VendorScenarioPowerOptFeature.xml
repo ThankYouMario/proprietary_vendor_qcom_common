@@ -1,0 +1,35 @@
+<!--
+/******************************************************************************
+  @file    VendorScenarioPowerOptFeature.xml
+  @brief   Vendor Scenario Power Optimization feature xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<Feature>
+   <Name>VendorScenarioPowerOptFeature</Name>
+   <Libname>libvendorscenariopoweroptfeature.so</Libname>
+    <Profiles>
+        <Profile>
+        <!--VIDEO_DEFAULT Type-->
+            <PROFILE1>0x00, 0x40C68000, 0xFFFFFFFA, 0x40C68200, 0xFFFFFFFA, 0x40CF4000, 0x270F2706, 0x40CA4000, 0x8</PROFILE1>
+        <!--VIDEO_CALL Type-->
+            <PROFILE2>0x01, 0x4183C000, 0x21, 0x41834000, 0x64, 0x41838000, 0, 0x43034000, 0x21,0x43020000, 0x64, 0x43024000, 0, 0x4303C000, 0x858B8 ,0x40804100, 0x433, 0x41444100, 0, 0x41444000, 0, 0x41440000, 0x63,0x40CE0000, 0x0032000A, 0x40CE0200, 0x00550055, 0x40CA4000, 0x8</PROFILE2>
+        <!--IM Type-->
+            <PROFILE3>0x02, 0x40CF4000, 0x270F2706, 0x40CA4000, 0x8</PROFILE3>
+        <!--BROWSER Type-->
+            <PROFILE4>0x03, 0x40C68000, 0xFFFFFFEC, 0x40C68200, 0xFFFFFFEC, 0x40CF4000, 0x270F2706</PROFILE4>
+        <!--READING Type-->
+            <PROFILE5>0x04, 0x40CF4000, 0x270F2706, 0x40CA4000, 0x8</PROFILE5>
+        <!--LowPower Type-->
+            <PROFILE6>0x05, 0x4143C100, 844, 0x4143C000, 1113, 0x4144C100, 600000, 0x4144C000, 600000, 0x41444100, 0, 0x41444000, 0, 0x41450100, 0, 0x41454100, 0x4, 0x41450000, 100, 0x41454000, 0x4</PROFILE6>
+        </Profile>
+    </Profiles>
+</Feature>
