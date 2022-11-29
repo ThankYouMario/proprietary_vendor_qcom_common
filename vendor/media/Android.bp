@@ -14,3 +14,21 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "c2_manifest_vendor_audio",
+	owner: "qcom/common",
+	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.qconfig@1.0-service",
+	owner: "qcom/common",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+

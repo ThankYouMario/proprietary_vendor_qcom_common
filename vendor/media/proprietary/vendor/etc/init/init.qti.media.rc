@@ -38,11 +38,11 @@ service qti-media /vendor/bin/init.qti.media.sh
     group media
     disabled
     oneshot
-    seclabel u:r:vendor_qti_media:s0
 
 on early-init
-    setprop vendor.media.target.qssi ${vendor.sys.media.target.qssi}
     setprop vendor.media.system.build_codename ${ro.build.version.release_or_codename}
+
+on post-fs
     start qti-media
 
 on post-fs-data
@@ -51,3 +51,6 @@ on post-fs-data
 
 on property:vendor.netflix.bsp_rev=*
     setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
+
+on property:vendor.mm.target.enable.qcom_parser=*
+    setprop vendor.mm.enable.qcom_parser ${vendor.mm.target.enable.qcom_parser}
