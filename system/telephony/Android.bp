@@ -160,17 +160,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QTIDiagServices",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/QTIDiagServices/QTIDiagServices.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephony",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
