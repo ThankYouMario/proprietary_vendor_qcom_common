@@ -1,0 +1,11 @@
+<!--
+/*********************************************************************
+ Copyright (c) 2022 Qualcomm Technologies, Inc.
+ All Rights Reserved.
+ Confidential and Proprietary - Qualcomm Technologies, Inc.
+**********************************************************************/
+-->
+<permissions>
+<library name="vendor.qti.ims.datachannelservice-V1-java"
+         file="/system/framework/vendor.qti.ims.datachannelservice-V1-java.jar"/>
+</permissions>
