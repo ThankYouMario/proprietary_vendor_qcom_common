@@ -7,5 +7,5 @@
 -->
 <permissions>
 <library name="vendor.qti.ims.datachannelservice-V1-java"
-         file="/system/framework/vendor.qti.ims.datachannelservice-V1-java.jar"/>
+         file="/system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar"/>
 </permissions>
