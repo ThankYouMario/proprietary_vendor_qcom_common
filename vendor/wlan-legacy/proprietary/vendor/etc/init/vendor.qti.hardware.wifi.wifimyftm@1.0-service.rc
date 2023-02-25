@@ -1,0 +1,16 @@
+#==============================================================================
+#       vendor.qti.wifi.wifimyftm@1.0-service.rc
+#  Copyright (c) 2020 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#===============================================================================
+service vendor.wifimyftm /system/vendor/bin/wifimyftm
+    class main
+    user root
+    group root
+    # HIDL interfaces
+    interface vendor.qti.hardware.wifi.wifimyftm@1.0::IWifiMyFtm default
+    # don't auto restart
+    oneshot
+    # start only when requested
+    disabled
