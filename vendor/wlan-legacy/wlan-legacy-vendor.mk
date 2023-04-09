@@ -16,15 +16,11 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/bin/wificfrtool:$(TARGET_COPY_OUT_VENDOR)/bin/wificfrtool \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
-    vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/bin/wifimyftm:$(TARGET_COPY_OUT_VENDOR)/bin/wifimyftm \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wificfr@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wificfr@1.0-service.rc \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
-    vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifimyftm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifimyftm@1.0-service.rc \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/libspectre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspectre.so \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wificfr@1.0.so \
-    vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
-    vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifimyftm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifimyftm@1.0.so
+    vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.wifi.wificfr@1.0-service \
-    vendor.qti.hardware.wifi.wifimyftm@1.0-service
+    vendor.qti.hardware.wifi.wificfr@1.0-service
