@@ -45,5 +45,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/media-legacy/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so
 
 PRODUCT_PACKAGES += \
-    libMpeg4SwEncoder \
-    c2_manifest_vendor
+    libMpeg4SwEncoder
