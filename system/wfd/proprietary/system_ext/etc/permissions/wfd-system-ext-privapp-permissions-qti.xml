@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  Copyright (c) 2020, 2023 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
 <permissions>
     <privapp-permissions package="com.qualcomm.wfd.service">
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
     </privapp-permissions>
 </permissions>

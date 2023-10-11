@@ -8,11 +8,11 @@ soong_namespace {
 android_app_import {
 	name: "PowerOffAlarm",
 	owner: "qcom/common",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
