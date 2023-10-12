@@ -6,28 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "CallFeaturesSetting",
-	owner: "qcom/common",
-	apk: "proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "ConfURIDialer",
-	owner: "qcom/common",
-	apk: "proprietary/product/app/ConfURIDialer/ConfURIDialer.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "ConferenceDialer",
 	owner: "qcom/common",
 	apk: "proprietary/product/app/ConferenceDialer/ConferenceDialer.apk",
@@ -105,14 +83,14 @@ android_app_import {
 }
 
 android_app_import {
-	name: "xdivert",
+	name: "AtFwd2",
 	owner: "qcom/common",
-	apk: "proprietary/product/app/xdivert/xdivert.apk",
+	apk: "proprietary/system_ext/app/AtFwd2/AtFwd2.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -215,28 +193,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "embms",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "uceShimService",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
@@ -244,18 +200,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "QAS_DVC_MSP",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -319,13 +263,6 @@ dex_import {
 	name: "uimgbamanagerlibrary",
 	owner: "qcom/common",
 	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "uimlpalibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
 	product_specific: true,
 }
 
@@ -470,13 +407,6 @@ dex_import {
 }
 
 dex_import {
-	name: "embmslibrary",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "qcrilhook",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
@@ -554,6 +484,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.factory-V2.8-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.8-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factoryservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factoryservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.mwqem-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
@@ -561,9 +505,23 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.mwqemaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqemaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.slm-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.cacertaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.cacertaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -610,6 +568,27 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
@@ -620,6 +599,20 @@ dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.1-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connectionfactory-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connectionfactory-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dataactivity-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dataactivity-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -638,6 +631,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.dynamicddsaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.flow-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar"],
@@ -648,6 +648,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.flow-V1.1-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.flowaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flowaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -666,6 +673,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.iwlandata-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlandata-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.ka-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.ka-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.latency-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
@@ -680,9 +701,30 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.lceaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.lceaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.qmi-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.qmiaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.dpmaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.dpmaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -708,6 +750,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.mwqemadapteraidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.mwqemadapteraidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.slmadapter-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar"],
@@ -722,9 +771,23 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.callcapabilityaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.configaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -746,6 +809,13 @@ dex_import {
 	name: "vendor.qti.ims.connection-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.connectionaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -788,6 +858,13 @@ dex_import {
 	name: "vendor.qti.ims.factory-V2.2-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factoryaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -841,6 +918,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssipaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
@@ -862,6 +946,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcsuceaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.latency-V2.0-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
@@ -879,6 +970,13 @@ dex_import {
 	name: "vendor.qti.latency-V2.2-java",
 	owner: "qcom/common",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latencyaidlservice-V1-java",
+	owner: "qcom/common",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latencyaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
