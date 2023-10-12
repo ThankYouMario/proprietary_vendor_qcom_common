@@ -26,4 +26,12 @@
         file="/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"/>
     <library name="vendor.qti.ims.rcssip-V1.2-java"
         file="/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar"/>
+    <library name="vendor.qti.ims.factoryaidlservice-V1-java"
+        file="/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar"/>
+    <library name="vendor.qti.ims.rcssipaidlservice-V1-java"
+         file="/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar"/>
+    <library name="vendor.qti.ims.rcsuceaidlservice-V1-java"
+         file="/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar"/>
+    <library name="vendor.qti.ims.connectionaidlservice-V1-java"
+         file="/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar"/>
 </permissions>

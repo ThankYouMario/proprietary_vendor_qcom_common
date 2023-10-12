@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2019 Qualcomm Technologies, Inc.
+  ~ Copyright (c) 2019, 2023 Qualcomm Technologies, Inc.
   ~ All Rights Reserved.
   ~ Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -37,6 +37,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 
     <privapp-permissions package="com.qti.ltebc">
         <permission name="android.permission.SEND_EMBMS_INTENTS"/>
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
     </privapp-permissions>
 
 </permissions>
