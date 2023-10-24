@@ -12,6 +12,7 @@ service perf-hal-2-3 /vendor/bin/hw/vendor.qti.hardware.perf-hal-service
     user root
     group root system readproc oem_2907
 
+
 on property:vendor.change.cgroup=fg && property:vendor.change.cgroup.for.pid=*
     write /dev/cpuset/foreground/tasks ${vendor.change.cgroup.for.pid}
     write /dev/cpuctl/foreground/tasks ${vendor.change.cgroup.for.pid}

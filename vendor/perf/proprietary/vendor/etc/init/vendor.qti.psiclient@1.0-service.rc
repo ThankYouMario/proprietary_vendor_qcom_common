@@ -7,6 +7,7 @@ service psiclient /vendor/bin/hw/vendor.qti.psiclient@1.0-service
     user system
     group system
     disabled
+    capabilities SYS_RESOURCE
 
 # Stop psi service when vendor.pasr.[activemode.enabled/enabled] is disabled
 on property:vendor.pasr.activemode.enabled=false
