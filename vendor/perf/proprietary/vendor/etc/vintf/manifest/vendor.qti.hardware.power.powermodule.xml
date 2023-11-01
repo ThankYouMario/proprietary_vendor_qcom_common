@@ -5,10 +5,9 @@
 -->
 <manifest version="1.0" type="device">
     <!-- Power Module service -->
-    <hal format="hidl">
+    <hal format="aidl">
         <name>vendor.qti.hardware.power.powermodule</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1</version>
         <interface>
             <name>IPowerModule</name>
             <instance>default</instance>

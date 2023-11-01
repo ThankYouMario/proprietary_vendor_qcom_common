@@ -1,0 +1,9 @@
+# Copyright (c) 2020, 2023 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service pasr-hal /vendor/bin/hw/vendor.qti.memory.pasrmanager-service
+    class hal
+    user system
+    group system
+    interface aidl vendor.qti.memory.pasrmanager.IPasrManager/default

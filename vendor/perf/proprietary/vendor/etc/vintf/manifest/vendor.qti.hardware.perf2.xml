@@ -28,10 +28,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <manifest version="1.0" type="device">
     <!-- Perf HAL service -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <version>2.3</version>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.perf2</name>
+        <version>1</version>
         <interface>
             <name>IPerf</name>
             <instance>default</instance>
