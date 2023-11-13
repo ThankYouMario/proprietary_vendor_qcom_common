@@ -11,5 +11,4 @@
 service iop-hal-2-0 /vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
     class hal
     user root
-    disabled
     group root readproc
