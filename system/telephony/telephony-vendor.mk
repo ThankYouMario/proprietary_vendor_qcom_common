@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/telephony/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/qcom/common/system/telephony/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/qcom/common/system/telephony/proprietary/product/etc/permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml \
+    vendor/qcom/common/system/telephony/proprietary/system/lib/vendor.qti.hardware.data.connectionaidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.data.connectionaidl-V1-ndk.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
     vendor/qcom/common/system/telephony/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
     vendor/qcom/common/system/telephony/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
@@ -180,6 +181,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.connection@1.0.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so \
+    vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so \
     vendor/qcom/common/system/telephony/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.0.so \
@@ -230,6 +232,8 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     tcmclient \
+    vendor.qti.hardware.data.connectionaidl-V1-java \
+    vendor.qti.hardware.radio.qtiradio-V1-java \
     remotesimlockmanagerlibrary \
     uimgbalibrary \
     uimgbamanagerlibrary \
@@ -313,6 +317,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
+    vendor.qti.ims.datachannelservice-V2-java \
     vendor.qti.ims.factory-V1.0-java \
     vendor.qti.ims.factory-V1.1-java \
     vendor.qti.ims.factory-V2.0-java \

@@ -49,7 +49,6 @@ sigaltstack: 1
 getrlimit: 1
 restart_syscall: 1
 sched_getscheduler: 1
-setsched: 1
 execve: 1
 socket: arg0 == AF_UNIX
 set_tid_address: 1
