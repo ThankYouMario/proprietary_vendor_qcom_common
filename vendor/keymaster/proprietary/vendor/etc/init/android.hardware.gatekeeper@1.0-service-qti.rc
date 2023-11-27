@@ -1,3 +1,11 @@
+on property:vendor.keymaster.quickboot=false
+     stop gatekeeper-1-0
+     stop gatekeeperd
+
+on property:vendor.keymaster.quickboot=true
+     start gatekeeper-1-0
+     start gatekeeperd
+
 service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
     class early_hal
     user system

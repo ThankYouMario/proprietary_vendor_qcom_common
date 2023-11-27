@@ -1,6 +1,15 @@
 on init
     start vendor.keymaster-4-1
 
+on property:vendor.keymaster.quickboot=false
+   stop vendor.keymaster-4-1
+   stop keystore
+
+on property:vendor.keymaster.quickboot=true
+   start vendor.keymaster-4-1
+   start keystore
+   start wait_for_keymaster
+
 service vendor.keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
     class early_hal
     user system
