@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.2-impl.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
@@ -39,6 +39,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libloc_qwes_iface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_qwes_iface.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libloc_ril_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_ril_client.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
@@ -57,9 +59,11 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@3.0.so \
-    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@4.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0-service.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.1.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@4.2-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.2-service.so \
+    vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.gnss@4.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.2.so \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.gnss@4.0-service
+    vendor.qti.gnss@4.2-service
