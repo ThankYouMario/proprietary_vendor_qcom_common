@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2022 Qualcomm Technologies, Inc.
+   All rights reserved.
+   Confidential and Proprietary - Qualcomm Technologies, Inc.
+ -->
+
+<permissions>
+
+<permission name="com.qti.qcc.permission.VENDOR_QCC">
+    <group gid="misc" />
+    <group gid="system" />
+</permission>
+
+</permissions>

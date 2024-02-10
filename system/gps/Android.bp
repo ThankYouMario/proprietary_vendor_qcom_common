@@ -6,6 +6,17 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "QCC",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/app/QCC/QCC.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "com.qualcomm.location",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
