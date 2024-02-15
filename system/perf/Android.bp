@@ -17,6 +17,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "workloadclassifier",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "PerformanceMode",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/priv-app/PerformanceMode/PerformanceMode.apk",
