@@ -11,6 +11,7 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
         <fqname>@3.0::ILocHidlGnss/gnss_vendor</fqname>
         <fqname>@4.0::ILocHidlGnss/gnss_vendor</fqname>
         <fqname>@4.2::ILocHidlGnss/gnss_vendor</fqname>
+        <fqname>@4.3::ILocHidlGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gnss</name>
