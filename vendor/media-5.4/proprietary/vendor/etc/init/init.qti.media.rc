@@ -40,7 +40,7 @@ service qti-media /vendor/bin/init.qti.media.sh
     oneshot
     seclabel u:r:vendor_qti_media:s0
 
-on early-init
+on post-fs
     setprop vendor.media.target.qssi ${vendor.sys.media.target.qssi}
     setprop vendor.media.system.build_codename ${ro.build.version.release_or_codename}
     start qti-media
