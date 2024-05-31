@@ -33,15 +33,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.memory.pasrmanager-service",
-	owner: "qcom/common",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.qspmhal-service",
 	owner: "qcom/common",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
