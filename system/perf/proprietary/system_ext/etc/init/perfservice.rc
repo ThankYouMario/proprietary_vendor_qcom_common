@@ -8,3 +8,7 @@ service vendor.perfservice /system_ext/bin/perfservice
     class main
     user system
     group system readproc
+
+on property:ro.vendor.qti.per_boot_created=1
+    # Run swapon command to enable zram
+    swapon_all /vendor/etc/fstab.default
