@@ -52,3 +52,4 @@ getdents64: 1
 setpriority: 1
 shutdown: 1
 nanosleep: 1
+gettid: 1
