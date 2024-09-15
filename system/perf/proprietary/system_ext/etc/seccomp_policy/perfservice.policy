@@ -54,6 +54,7 @@ socket: arg0 == AF_UNIX
 set_tid_address: 1
 rt_sigreturn: 1
 connect: 1
+gettimeofday: 1
 
 # added for atoll
 clock_gettime: 1
