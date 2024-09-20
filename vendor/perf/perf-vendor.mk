@@ -70,7 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/perf/proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal-impl.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf2 \
-    vendor.qti.hardware.power.powermodule \
-    vendor.qti.hardware.servicetrackeraidl-service \
-    vendor.qti.qspmhal-service
+    vendor.qti.hardware.perf2.xml \
+    vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.servicetrackeraidl-service.xml \
+    vendor.qti.qspmhal-service.xml

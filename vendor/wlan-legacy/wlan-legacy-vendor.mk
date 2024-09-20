@@ -23,4 +23,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/wlan-legacy/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.wifi.wificfr@1.0-service
+    vendor.qti.hardware.wifi.wificfr@1.0-service.xml

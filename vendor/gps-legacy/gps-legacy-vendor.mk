@@ -67,4 +67,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/gps-legacy/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
 PRODUCT_PACKAGES += \
-    vendor.qti.gnss@4.3-service
+    vendor.qti.gnss@4.3-service.xml

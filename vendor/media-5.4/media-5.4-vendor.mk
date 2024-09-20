@@ -55,4 +55,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/vendor/media-5.4/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so
 
 PRODUCT_PACKAGES += \
-    c2_manifest_vendor
+    c2_manifest_vendor.xml
