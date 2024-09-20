@@ -58,3 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     WfdService \
     WfdCommon
+
+PRODUCT_PACKAGES += \
+    libwfdnative_libwfdnative_symlink64

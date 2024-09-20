@@ -23,3 +23,10 @@ dex_import {
 	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
+install_symlink {
+	name: "libwfdnative_libwfdnative_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/WfdService/lib/arm64/libwfdnative.so",
+	symlink_target: "/system_ext/lib64/libwfdnative.so",
+}
+

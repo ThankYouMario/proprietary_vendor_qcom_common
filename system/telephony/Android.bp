@@ -1010,3 +1010,17 @@ dex_import {
 	system_ext_specific: true,
 }
 
+install_symlink {
+	name: "libimscamera_jni_libimscamera_jni_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
+	symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
+	symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+}
+
