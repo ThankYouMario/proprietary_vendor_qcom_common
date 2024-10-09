@@ -1,0 +1,54 @@
+#
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+#on post-fs-data
+#    start qccsyshal_aidl-service
+
+on init && property:ro.boot.product.vendor.sku=sun
+    enable qccsyshal_aidl-service
+
+on post-fs-data && property:ro.boot.product.vendor.sku=sun
+    mkdir /dev/socket/qcc_app 0770 system misc
+    chmod 2770 /dev/socket/qcc_app
+    mkdir /data/misc/qcc 0770 system misc
+    mkdir /data/misc/qcc/up 0770 system misc
+    mkdir /data/misc/qcc/down 0770 system misc
+    mkdir /data/misc/qcc/conf 0770 system misc
+    mkdir /data/misc/qcc/shared 0770 system misc
+    mkdir /data/misc/qcc/file_agent 0770 system misc
+    chown system misc /data/misc/qcc/file_agent
+
+on property:vendor.qti.qcc.oper.mode=1
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:1"
+    chown system misc /data/misc/qcc/conf/qcc.conf
+    chmod 0660 /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=2
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:2"
+    chown system misc /data/misc/qcc/conf/qcc.conf
+    chmod 0660 /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=3
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:3"
+    chown system misc /data/misc/qcc/conf/qcc.conf
+    chmod 0660 /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=4
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:4"
+    chown system misc /data/misc/qcc/conf/qcc.conf
+    chmod 0660 /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=6
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:6"
+    chown system misc /data/misc/qcc/conf/qcc.conf
+    chmod 0660 /data/misc/qcc/conf/qcc.conf
+
+service qccsyshal_aidl-service /system_ext/bin/qccsyshal_aidl-service
+    disabled
+    class hal
+    user system
+    group misc system
+    interface aidl vendor.qti.qccsyshal_aidl

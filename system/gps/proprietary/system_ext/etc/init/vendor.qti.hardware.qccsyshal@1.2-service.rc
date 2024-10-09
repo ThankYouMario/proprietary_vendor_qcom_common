@@ -1,13 +1,63 @@
 #
-# Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
+on init && property:ro.boot.product.vendor.sku=pineapple
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=kalama
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=taro
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=cliffs
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=crow
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=parrot
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=ravelin
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=yupik
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=volcano
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=pitti
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=cape
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=ukee
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=blair
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=holi
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=diwali
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=Lahaina
+    enable qccsyshal
+
+on init && property:ro.boot.product.vendor.sku=shima
+    enable qccsyshal
+
 on post-fs-data
     mkdir /dev/socket/qcc_app 0770 system misc
     chmod 2770 /dev/socket/qcc_app
-
     mkdir /data/misc/qcc 0770 system misc
     mkdir /data/misc/qcc/up 0770 system misc
     mkdir /data/misc/qcc/down 0770 system misc
@@ -41,7 +91,8 @@ on property:vendor.qti.qcc.oper.mode=6
     chown system misc /data/misc/qcc/conf/qcc.conf
     chmod 0660 /data/misc/qcc/conf/qcc.conf
 
-service qccsyshal@1.2-service /system/system_ext/bin/qccsyshal@1.2-service
+service qccsyshal /system/system_ext/bin/qccsyshal@1.2-service
     class hal
     user system
     group misc system
+    disabled

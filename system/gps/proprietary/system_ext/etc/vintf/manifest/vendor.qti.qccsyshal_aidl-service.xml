@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/qcom/proprietary/commonsys/qcc/aidl/hal/qccsyshal_aidl/vendor.qti.qccsyshal_aidl-service.xml
+-->
+<manifest version="8.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.qti.qccsyshal_aidl</name>
+        <fqname>IQccsyshal/default</fqname>
+    </hal>
+</manifest>

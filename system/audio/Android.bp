@@ -14,10 +14,3 @@ dex_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "vendor.qti.voiceprint-V1.0-java",
-	owner: "qcom/common",
-	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-

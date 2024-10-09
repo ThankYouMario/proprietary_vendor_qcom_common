@@ -37,3 +37,12 @@ dex_import {
 	system_ext_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "vendor.qti.qccsyshal_aidl-service.xml",
+	owner: "qcom/common",
+	src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	system_ext_specific: true,
+}
+

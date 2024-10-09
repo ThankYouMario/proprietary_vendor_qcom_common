@@ -14,6 +14,7 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
         <permission name="android.permission.WATCH_APPOPS"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.CHANGE_NETWORK_STATE"/>
         <permission name="android.permission.WRITE_SETTINGS"/>
